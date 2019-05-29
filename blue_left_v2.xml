@@ -15,6 +15,7 @@
         <mesh name="finger_limb_link" file="finger_limb_link.STL" />
         <mesh name="finger_tip_link" file="finger_tip_link.STL" />
     </asset>
+
     <worldbody>
         <body name="left_base_link" pos="0 0 0">
             <inertial pos="0.107964 -0.000118075 0.0740607" quat="-0.00144458 0.606987 0.000927747 0.79471" mass="3.45161" diaginertia="0.0175534 0.0157386 0.00730286" />
@@ -92,13 +93,15 @@
             </body>
         </body>
     </worldbody>
+
     <actuator>
-        <motor ctrlrange="-1.0 1.0" gear="14.0" joint="left_base_roll_joint" />
-        <motor ctrlrange="-1.0 1.0" gear="10.0" joint="left_shoulder_lift_joint" />
-        <motor ctrlrange="-1.0 1.0" gear="10.0" joint="left_shoulder_roll_joint" />
-        <motor ctrlrange="-1.0 1.0" gear="7.0" joint="left_elbow_lift_joint" />
-        <motor ctrlrange="-1.0 1.0" gear="7.0" joint="left_elbow_roll_joint" />
-        <motor ctrlrange="-1.0 1.0" gear="5.0" joint="left_wrist_lift_joint" />
-        <motor ctrlrange="-1.0 1.0" gear="5.0" joint="left_wrist_roll_joint" />
+        <motor ctrlrange="-2.0 2.0" gear="1.0" joint="left_base_roll_joint" />
+        <motor ctrlrange="-2.0 2.0" gear="1.0" joint="left_shoulder_lift_joint" />
+        <motor ctrlrange="-2.0 2.0" gear="1.0" joint="left_shoulder_roll_joint" />
+        <motor ctrlrange="-2.0 2.0" gear="1.0" joint="left_elbow_lift_joint" />
+        <motor ctrlrange="-2.0 2.0" gear="1.0" joint="left_elbow_roll_joint" />
+        <motor ctrlrange="-1.0 1.0" gear="1.0" joint="left_wrist_lift_joint" />
+        <motor ctrlrange="-1.0 1.0" gear="1.0" joint="left_wrist_roll_joint" />
     </actuator>
+
 </mujoco>
